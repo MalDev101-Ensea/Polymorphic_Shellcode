@@ -1,3 +1,25 @@
+/*
+Explications des étapes du code C
+
+    Allocation de mémoire exécutable :
+        La mémoire est allouée avec mmap pour permettre l'exécution du shellcode.
+
+    Copie du shellcode dans la mémoire allouée :
+        Le shellcode généré par le script Python est copié dans la mémoire exécutable allouée.
+
+    Exécution du shellcode :
+        Le shellcode est exécuté en appelant la mémoire allouée comme une fonction.
+
+Utilisation :
+
+Copiez le shellcode généré (sortie du script Python) dans le code C à la place de  " unsigned char polymorphic_shellcode[]. "
+Compilez et exécutez le code C :
+gcc -o shellcode shellcode.c -z execstack -fno-stack-protector
+./shellcode
+
+*/
+
+
 #include <stdio.h>
 #include <string.h>
 #include <sys/mman.h>
