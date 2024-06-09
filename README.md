@@ -51,3 +51,22 @@ Techniques de chiffrement
 
     Automatiser le processus
         Écrivez un script ou un programme pour automatiser les étapes ci-dessus.
+
+
+UTILISATION :
+
+1 - Exécutez le script Python pour générer le shellcode polymorphique :
+
+        python3 generate_shellcode.py
+
+2 - Copiez le shellcode généré (sortie du script Python) dans le code C à la place de unsigned char polymorphic_shellcode[].
+
+3 - Compilez et exécutez le code C :
+
+        gcc -o shellcode shellcode.c -z execstack -fno-stack-protector
+        ./shellcode
+
+
+
+
+        
