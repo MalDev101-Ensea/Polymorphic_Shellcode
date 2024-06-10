@@ -64,7 +64,7 @@ UTILISATION :
 3 - Compilez et exécutez le code C :
 
         gcc -o ShellcodeLauncher ShellcodeLauncher.c -z execstack -fno-stack-protector
-        ./shellcode
+        ./ShellcodeLauncher
 
 
 
