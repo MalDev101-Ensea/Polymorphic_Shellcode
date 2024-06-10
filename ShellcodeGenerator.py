@@ -12,7 +12,7 @@
 #
 #
 #Exécutez le script Python pour générer le shellcode polymorphique :
-#  python3 generate_shellcode.py
+#  python3 ShellcodeGenerator.py
 
 
 
