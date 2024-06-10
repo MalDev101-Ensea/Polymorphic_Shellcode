@@ -13,9 +13,10 @@ Explications des étapes du code C
 Utilisation :
 
 Copiez le shellcode généré (sortie du script Python) dans le code C à la place de  " unsigned char polymorphic_shellcode[]. "
-Compilez et exécutez le code C :
+Compilez le code C :
 gcc -o ShellcodeLauncher ShellcodeLauncher.c -z execstack -fno-stack-protector
-./shellcode
+et exécutez :
+./ShellcodeLauncher
 
 */
 
